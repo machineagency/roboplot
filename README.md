@@ -21,5 +21,8 @@ On July 23rd 2024 the Agents had fun plotting with the xArm6
 4. install the gcode plugin: https://github.com/plottertools/vpype-gcode
 5. also install `matplotlib` and `numpy`
 6. generate example csv:
-   `vpype --config gwriteConfig.toml rect 0mm 0mm 10mm 10mm gwrite -p custom square.csv `
+   `vpype --config gwriteConfig.toml rect 0mm 0mm 10mm 10mm gwrite -p custom commands.csv `
 7. run the script: `python3 arm_plot.py`
+
+To instead generate from an svg:
+`vpype --config gwriteConfig.toml read -q 1mm examples/floral.svg show gwrite -p custom commands.csv`
