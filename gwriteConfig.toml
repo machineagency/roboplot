@@ -1,0 +1,5 @@
+[gwrite.custom]
+document_start = "#Operation, X-value, Y-value\n"
+segment_first = "0, {x:f}, {y:f}\n"
+segment = "1, {x:f}, {y:f}\n"
+segment_last = "2, {x:f}, {y:f}\n"
